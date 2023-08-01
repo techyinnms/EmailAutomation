@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Update Request</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f7f7f7; margin: 0; padding: 0;">
+    <div class="container" style="max-width: 400px; margin: 50px auto; padding: 20px; background-color: #ffffff; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <h1 style="text-align: center; color: #333333;">Task Update Request</h1>
+        <p style="margin-top: 20px; font-size: 18px; color: #666666;">Task: {task_name}</p>
+        <form action="/feedback/{row_index}" method="post" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+            <input type="hidden" name="row_index" value="{row_index}">
+            <input type="submit" name="status" value="Done" style="margin-bottom: 10px; padding: 10px 20px; height: 40px; background-color: #4CAF50; color: #ffffff; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+            <input type="submit" name="status" value="Not Done Yet" style="padding: 10px 20px; height: 40px; background-color: #4CAF50; color: #ffffff; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Update</title>
+    <link rel="stylesheet" href="{{ url_for('serve_static', path='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Update</h1>
+        <form action="/send_email" method="post">
+            <label for="sender_email">Your Email:</label>
+            <input type="email" id="sender_email" name="sender_email" required>
+            <input type="submit" value="Send Task Update">
+        </form>
+    </div>
+</body>
+</html>
